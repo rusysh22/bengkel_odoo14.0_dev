@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <!-- bengkel.sparepart tree view -->
+<record id="bengkel_sparepart_view_tree" model="ir.ui.view">
+    <field name="name">Sparepart</field>
+    <field name="model">bengkel.sparepart</field>
+    <field name="arch" type="xml">
+        <tree>
+            <!-- Add your fields here -->
+            <field name="nomor"/>
+            <field name="kode"/>
+            <field name="name"/>
+            <field name="stok"/>
+            <field name="harga"/>
+        </tree>
+    </field>
+</record>
+
+    <!-- bengkel.sparepart action window -->
+    <record id="bengkel_sparepart_action" model="ir.actions.act_window">
+        <field name="name">Daftar Sparepart</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">bengkel.sparepart</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+    id="bengkel_sparepart_menu_act" 
+    name="Daftar Sparepart" 
+    parent="layanan_menu_categ" 
+    action="bengkel_sparepart_action" 
+    sequence="10"/>
+
+
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tabel_karyawan,access.tabel.karyawan,model_tabel_karyawan,,1,1,1,1
+access_bengkel_sparepart,access.bengkel.sparepart,model_bengkel_sparepart,,1,1,1,1
+access_bengkel_servis,access.bengkel.servis,model_bengkel_servis,,1,1,1,1
+access_bengkel_order,access.bengkel.order,model_bengkel_order,,1,1,1,1
+access_bengkel_sparepartdetail,access.bengkel.sparepartdetail,model_bengkel_sparepartdetail,,1,1,1,1
+access_bengkel_servisdetail,access.bengkel.servisdetail,model_bengkel_servisdetail,,1,1,1,1

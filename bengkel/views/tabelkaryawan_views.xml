@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+<!-- tabel.karyawan tree view -->
+<record id="tabel_karyawan_view_tree" model="ir.ui.view">
+    <field name="name">Tabel Karyawan</field>
+    <field name="model">tabel.karyawan</field>
+    <field name="arch" type="xml">
+        <tree>
+            <!-- Add your fields here -->
+            <field name="nomor"/>
+            <field name="noinduk"/>
+            <field name="name"/>
+            <field name="alamat"/>
+            <field name="tgllahir"/>
+            <field name="tglgabung"/>
+        </tree>
+    </field>
+</record>
+
+    <!-- tabel.karyawan action window -->
+    <record id="tabel_karyawan_action" model="ir.actions.act_window">
+        <field name="name">Daftar Tabel Karyawan</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">tabel.karyawan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+    id="daftar_karyawan_menu_act" 
+    name="Daftar Karyawan" 
+    parent="karyawan_menu_categ" 
+    action="tabel_karyawan_action" 
+    sequence="10"/>
+
+</odoo>
