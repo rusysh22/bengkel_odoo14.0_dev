@@ -1,5 +1,6 @@
 # bengkel_odoo14.0_dev
 Nama : Muhammad Rusydani Shubkhi
+
 Divisi : ERP Software Programmer
 
 Tugas Akhir Training Python, PostgreSQL, dan XML by Odoo Developer Team PT Hashmicro Solusi Indonesia
